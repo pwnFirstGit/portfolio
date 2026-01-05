@@ -1,0 +1,64 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: linear-gradient(
+    180deg,
+    #0f2027 0%,
+    #203a43 40%,
+    #121212 100%
+  );
+  color: #eaeaea;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+
+/* Smooth scroll already added */
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px 60px 80px;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 80px;
+}
+
+/* Headings */
+h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #007acc;
+  margin-top: 8px;
+}
+
+/* Paragraphs */
+p {
+  max-width: 700px;
+  color: #cfcfcf;
+}
+
+/* Links */
+a {
+  color: inherit;
+}
