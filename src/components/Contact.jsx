@@ -1,4 +1,4 @@
-
+import "./Contact.css";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function Contact() {
@@ -30,12 +30,14 @@ export default function Contact() {
           </p>
 
           <form
+            className="contact-form"
             name="contact"
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
-          >  
+          >
+
             <div className="form-group">
               <label>Your Name</label>
               <input type="text" name="name" required />
