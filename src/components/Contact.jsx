@@ -19,8 +19,11 @@ export default function Contact() {
             name="contact"
             method="POST"
             data-netlify="true"
-            style={styles.form}
+            netlify-honeypot="bot-field"
+            action="/success"
           >
+
+            
             <input type="hidden" name="form-name" value="contact" />
 
             <label>Your Name</label>
