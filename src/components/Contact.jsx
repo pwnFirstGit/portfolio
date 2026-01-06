@@ -2,6 +2,20 @@
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function Contact() {
+  
+  const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+
+  fetch("/", {
+    method: "POST",
+    body: new FormData(form),
+  })
+    .then(() => alert("✅ Message sent successfully!"))
+    .catch(() => alert("❌ Error sending message"));
+};
+
   return (
     <section id="contact">
       <h2>Contact With Me</h2>
@@ -20,6 +34,7 @@ export default function Contact() {
             method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
           >  
             <input type="hidden" name="form-name" value="contact" />
 
