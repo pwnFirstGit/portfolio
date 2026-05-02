@@ -16,11 +16,16 @@ export default function Projects() {
             e.currentTarget.style.boxShadow = "none";
         }} 
     >
-          <h3>Housing Prices Prediction</h3>
+          <h3>Adaptive Authentication System</h3>
 
           <p>
-            A machine learning project focused on predicting housing prices
-            using regression techniques and advanced models.
+            I designed an " Adaptive Authentication Sytem " that not only check password and username when user login but also check its 
+            location, ip address, timestamp, browser and compare it with previous data and if finds different then assign risk score 
+            dynamically to each login. e.g. 
+
+Score 0–29   → Allow login
+Score 30–99  → Require OTP verification
+Score 100+   → Block login
           </p>
 
           <ul style={styles.list}>
@@ -47,10 +52,10 @@ export default function Projects() {
             </a>
 
             <a
-              href="https://www.instagram.com"
+              href="https://https://adaptive-auth-system.onrender.com/docs"
               style={styles.demoBtn}
             >
-              Live Demo
+              Live API
             </a>
           </div>
         </div>
