@@ -52,7 +52,7 @@ Score 100+   → Block login
             </a>
 
             <a
-              href="https://https://adaptive-auth-system.onrender.com/docs"
+              href="https://adaptive-auth-system.onrender.com/docs"
               style={styles.demoBtn}
             >
               Live API
