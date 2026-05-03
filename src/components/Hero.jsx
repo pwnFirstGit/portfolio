@@ -17,11 +17,7 @@ export default function Hero() {
 
         <div style={styles.buttons}>
           <a href="#contact" style={styles.contactBtn}>Contact Me</a>
-          <a
-            href="/resume_new.pdf"
-            download
-            style={styles.resumeBtn}
-          >
+          <a href="/resume_new.pdf" download style={styles.resumeBtn}>
             Get Resume
           </a>
         </div>
@@ -37,34 +33,30 @@ export default function Hero() {
     <span style={styles.string}>"ML Engineer"</span>
   ],
   {"\n"}  skills: [
-  <span style={styles.skill}>"React"</span>,{" "}
-  <span style={styles.skill}>"Node"</span>,{" "}
   <span style={styles.skill}>"Python"</span>,{" "}
-  <span style={styles.skill}>"MySQL"</span>,{" "}
-  <span style={styles.skill}>"Express"</span>
+  <span style={styles.skill}>"React"</span>,{" "}
+  <span style={styles.skill}>"FastAPI"</span>,{" "}
+  <span style={styles.skill}>"Docker"</span>,{" "}
+  <span style={styles.skill}>"PostgreSQL"</span>,{" "}
+  <span style={styles.skill}>"Redis"</span>,{" "}
+  <span style={styles.skill}>"Streamlit"</span>
 ],
-
   {"\n"}  learner: <span style={styles.boolean}>true</span>,
   {"\n"}  problemSolver: <span style={styles.boolean}>true</span>,
   {"\n"}  hireable: <span style={styles.boolean}>true</span>,
   {"\n"}{"}"};
 </pre>
-
       </div>
     </section>
   );
 }
 
-
 const styles = {
-
   skill: {
     color: "#f2f207ff",
     fontWeight: "500",
     textShadow: "0 0 6px rgba(0, 234, 255, 0.6)",
-    },
-
-
+  },
   hero: {
     display: "grid",
     gridTemplateColumns: "1.2fr 1fr",
@@ -115,20 +107,8 @@ const styles = {
     color: "#00f5c4",
     whiteSpace: "pre-wrap",
   },
-  keyword: {
-    color: "#c792ea", // purple
-    },
-
-  string: {
-    color: "#ff5370", // pink/red
-    },
-
-  array: {
-    color: "#00f5c4", // cyan
-    },
-
-  boolean: {
-    color: "#7CFC98", // green
-    }
-
+  keyword: { color: "#c792ea" },
+  string:  { color: "#ff5370" },
+  array:   { color: "#00f5c4" },
+  boolean: { color: "#7CFC98" },
 };

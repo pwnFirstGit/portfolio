@@ -9,25 +9,23 @@ export default function Navbar() {
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
-
-          
         </ul>
       </div>
     </nav>
   );
 }
 
-
-
-
-
 const styles = {
-    nav: {
+  nav: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    zIndex: 100,
     background: "rgba(18, 18, 18, 0.7)",
     backdropFilter: "blur(10px)",
     borderBottom: "1px solid rgba(255,255,255,0.08)",
-    },
-
+  },
   inner: {
     maxWidth: "1100px",
     margin: "0 auto",

@@ -1,12 +1,26 @@
+
+
 export default function About() {
+  const bullets = [
+    "B.Tech Computer Science and Engineering (AI) student at IIIT Manipur.",
+    "Interests in Machine Learning, Data Science, and Full-Stack Web Development.",
+    "Hands-on experience with Python, C++, JavaScript, FastAPI, React, Node.js, PostgreSQL, Redis, and Docker.",
+    "Built AIDE — an autonomous AI agent that reads GitHub issues, fixes code using LLM + RAG, and opens draft PRs automatically.",
+    "Built an Adaptive Authentication System with a real-time risk engine (IP, device, geolocation, time signals) that triggers OTP verification on suspicious logins — fully deployed to production.",
+    "Developed a Resume Builder web app with RESTful APIs, dynamic EJS templates, and PDF export.",
+    "Skilled in LLM agent design, RAG pipelines, risk-based security systems, and full-stack application development.",
+    "Former school and house captain with strong leadership and teamwork experience.",
+    "Motivated by continuous learning and building tools that solve real-world developer problems.",
+  ];
+
   return (
     <section id="about">
       <h2>About Me</h2>
-      <p>
-        I am a B.Tech Computer Science and Engineering (AI) student at IIIT Manipur with interests in Machine Learning, Data Science, and Full-Stack Web Development. I have hands-on experience with Python, C++, JavaScript, and tools such as Scikit-learn, Node.js, Express.js, and MySQL.
-
-I have developed projects including a Housing Price Prediction system and a Resume Builder Web Application, strengthening my skills in data analysis, model evaluation, backend development, and user-focused application design. I also bring leadership and teamwork experience as a former school and house captain and am motivated by continuous learning and problem-solving.
-      </p>
+      <ul>
+        {bullets.map((point, i) => (
+          <li key={i}>{point}</li>
+        ))}
+      </ul>
     </section>
   );
 }

@@ -11,7 +11,7 @@ function App() {
     <div>
       <Navbar />
 
-      <div className="container">
+      <div className="container" style={{ paddingTop: "80px" }}>
         <Hero />
         <About />
         <Skills />
